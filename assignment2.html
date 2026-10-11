@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex flex-col bg-stone-100 text-slate-800 font-sans">
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-stone-200 shadow-sm">
+    <nav class="max-w-4xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <a href="assignment_hero.html" class="flex items-center gap-2">
+        <span class="h-9 w-9 rounded-xl bg-orange-500 text-white text-sm font-black grid place-items-center">WT</span>
+        <span class="font-bold text-neutral-900">Web Technology</span>
+      </a>
+      <ul class="flex flex-wrap items-center gap-1.5">
+        <li><a class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-600 hover:bg-orange-50 hover:text-orange-700 transition" href="assignment_hero.html">Home</a></li>
+        <li><a class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-600 hover:bg-orange-50 hover:text-orange-700 transition" href="assignment1.html">Exp 1</a></li>
+        <li><a class="px-3.5 py-1.5 rounded-full text-sm font-semibold bg-orange-500 text-white shadow-sm" href="assignment2.html">Exp 2</a></li>
+        <li><a class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-600 hover:bg-orange-50 hover:text-orange-700 transition" href="assignment3.html">Exp 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-4xl mx-auto w-full px-4 py-8 flex-1 space-y-5">
+    <h1 class="bg-white rounded-xl shadow-md p-6 border-l-4 border-orange-500 text-xl sm:text-2xl font-bold leading-snug">
+      <span class="text-orange-600">Experiment 2.</span> Design a web site for book information, home page should contain books list, when particular book is clicked, information of the books should display in the next page.
+    </h1>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Aim</h2>
+      <p class="text-slate-600">To design a book information website where the home page shows a list of books, and clicking a book opens another page with that book's details.</p>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Procedure</h2>
+      <ol class="list-decimal ml-5 space-y-2 text-slate-600">
+        <li>Create a home page (index.html) that lists books using an unordered list.</li>
+        <li>Make each book title a hyperlink using the &lt;a&gt; tag.</li>
+        <li>Create a separate HTML page for each book (for example, book1.html, book2.html).</li>
+        <li>On the detail page, display title, author, publisher, price, and a short description.</li>
+        <li>Add a link on the detail page to go back to the home page.</li>
+      </ol>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Theory</h2>
+      <p class="text-slate-600">This experiment uses hyperlinks to connect multiple HTML pages. The home page acts as a navigation list. Each &lt;a href="filename.html"&gt; tag loads another document in the browser. Lists organize the book titles, and headings and paragraphs present book information on the next page. This is how simple multi-page websites work without a database or JavaScript.</p>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Sample Code</h2>
+      <p class="inline-block italic text-slate-600 bg-stone-100 px-3 py-1 rounded-md mb-3">Index.html</p>
+      <pre class="bg-neutral-900 text-stone-100 p-4 rounded-lg overflow-x-auto text-sm leading-relaxed mb-6"><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+              &lt;head&gt;
+                &lt;title&gt;Book Store - Home&lt;/title&gt;
+              &lt;/head&gt;
+
+            &lt;body&gt;
+            &lt;header&gt;
+            &lt;h1&gt;Online Book Information&lt;/h1&gt;
+            &lt;p&gt;Click a book title to see its details.&lt;/p&gt;
+            &lt;/header&gt;
+
+            &lt;main&gt;
+            &lt;h2&gt;Book List&lt;/h2&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href="book1.html"&gt;The Alchemist&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="book2.html"&gt;Wings of Fire&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="book3.html"&gt;Harry Potter and the Philosopher's Stone&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/main&gt;
+
+            &lt;footer&gt;
+            &lt;p&gt;Book Information Website&lt;/p&gt;
+            &lt;/footer&gt;
+
+            &lt;/body&gt;
+            &lt;/html&gt;
+      </code></pre>
+
+      <p class="inline-block italic text-slate-600 bg-stone-100 px-3 py-1 rounded-md mb-3">book1.html</p>
+      <pre class="bg-neutral-900 text-stone-100 p-4 rounded-lg overflow-x-auto text-sm leading-relaxed"><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+              &lt;head&gt;
+                &lt;title&gt;The Alchemist&lt;/title&gt;
+              &lt;/head&gt;
+
+            &lt;body&gt;
+            &lt;header&gt;
+            &lt;h1&gt;The Alchemist&lt;/h1&gt;
+            &lt;/header&gt;
+
+            &lt;main&gt;
+            &lt;h2&gt;Book Information&lt;/h2&gt;
+            &lt;p&gt;&lt;b&gt;Author:&lt;/b&gt; Paulo Coelho&lt;/p&gt;
+            &lt;p&gt;&lt;b&gt;Publisher:&lt;/b&gt; HarperCollins&lt;/p&gt;
+            &lt;p&gt;&lt;b&gt;Price:&lt;/b&gt; Rs. 299&lt;/p&gt;
+            &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt; A shepherd named Santiago travels in search of treasure and learns to follow his personal legend.&lt;/p&gt;
+            &lt;p&gt;&lt;a href="index.html"&gt;Back to Book List&lt;/a&gt;&lt;/p&gt;
+            &lt;/main&gt;
+
+            &lt;footer&gt;
+            &lt;p&gt;Book Information Website&lt;/p&gt;
+            &lt;/footer&gt;
+
+            &lt;/body&gt;
+            &lt;/html&gt;
+      </code></pre>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Result</h2>
+      <p class="text-slate-600">The result of this experiment is a two-page book website. The home page shows a list of books. Clicking a book title opens a new page with that book's information and a link back to the list.</p>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Application</h2>
+      <ul class="list-disc ml-5 space-y-2 text-slate-600">
+        <li>Online book catalogs and library listings</li>
+        <li>Product listing pages that open a details page</li>
+        <li>Multi-page websites using hyperlinks</li>
+        <li>Learning navigation between HTML documents</li>
+      </ul>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Conclusion</h2>
+      <p class="text-slate-600">In conclusion, this experiment showed how to build a simple book information site using a list on the home page and hyperlinks to separate detail pages for each book.</p>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-center text-stone-300 py-6 px-4 mt-auto">
+    <p class="font-bold text-orange-400">Web Technology Assignment Hub</p>
+    <p class="mt-1 text-sm">© 2026 | Built for learning HTML and web design</p>
+  </footer>
+</body>
+
+</html>

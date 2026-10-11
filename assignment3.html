@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex flex-col bg-stone-100 text-slate-800 font-sans">
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-stone-200 shadow-sm">
+    <nav class="max-w-4xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <a href="assignment_hero.html" class="flex items-center gap-2">
+        <span class="h-9 w-9 rounded-xl bg-orange-500 text-white text-sm font-black grid place-items-center">WT</span>
+        <span class="font-bold text-neutral-900">Web Technology</span>
+      </a>
+      <ul class="flex flex-wrap items-center gap-1.5">
+        <li><a class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-600 hover:bg-orange-50 hover:text-orange-700 transition" href="assignment_hero.html">Home</a></li>
+        <li><a class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-600 hover:bg-orange-50 hover:text-orange-700 transition" href="assignment1.html">Exp 1</a></li>
+        <li><a class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-600 hover:bg-orange-50 hover:text-orange-700 transition" href="assignment2.html">Exp 2</a></li>
+        <li><a class="px-3.5 py-1.5 rounded-full text-sm font-semibold bg-orange-500 text-white shadow-sm" href="assignment3.html">Exp 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-4xl mx-auto w-full px-4 py-8 flex-1 space-y-5">
+    <h1 class="bg-white rounded-xl shadow-md p-6 border-l-4 border-orange-500 text-xl sm:text-2xl font-bold leading-snug">
+      <span class="text-orange-600">Experiment 3.</span> Design a page to display the product information such as name, brand, price and etc with table tag.
+    </h1>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Aim</h2>
+      <p class="text-slate-600">To design a web page that displays product information such as name, brand, price, and other details using the HTML table tag.</p>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Procedure</h2>
+      <ol class="list-decimal ml-5 space-y-2 text-slate-600">
+        <li>Create an HTML document with a heading for the product list.</li>
+        <li>Use the &lt;table&gt; tag to create a table structure.</li>
+        <li>Add a header row with &lt;th&gt; for columns such as Product Name, Brand, Price, and Category.</li>
+        <li>Add data rows with &lt;td&gt; for each product.</li>
+        <li>Use table attributes such as border, cellpadding, and cellspacing to make the table readable.</li>
+      </ol>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Theory</h2>
+      <p class="text-slate-600">HTML tables are used to present data in rows and columns. The &lt;table&gt; element contains &lt;tr&gt; (table row) elements. Header cells use &lt;th&gt; and data cells use &lt;td&gt;. This layout is suitable for product catalogs because name, brand, price, and related fields line up clearly. Optional attributes like border, cellpadding, and cellspacing control the look of the table without CSS.</p>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Sample Code</h2>
+      <p class="inline-block italic text-slate-600 bg-stone-100 px-3 py-1 rounded-md mb-3">Index.html</p>
+      <pre class="bg-neutral-900 text-stone-100 p-4 rounded-lg overflow-x-auto text-sm leading-relaxed"><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+              &lt;head&gt;
+                &lt;title&gt;Product Information&lt;/title&gt;
+              &lt;/head&gt;
+
+            &lt;body&gt;
+            &lt;header&gt;
+            &lt;h1&gt;Product Information&lt;/h1&gt;
+            &lt;/header&gt;
+
+            &lt;main&gt;
+            &lt;h2&gt;Available Products&lt;/h2&gt;
+            &lt;table border="1" cellpadding="8" cellspacing="0"&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Product Name&lt;/th&gt;
+                &lt;th&gt;Brand&lt;/th&gt;
+                &lt;th&gt;Price&lt;/th&gt;
+                &lt;th&gt;Category&lt;/th&gt;
+                &lt;th&gt;Availability&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Wireless Mouse&lt;/td&gt;
+                &lt;td&gt;Logitech&lt;/td&gt;
+                &lt;td&gt;Rs. 899&lt;/td&gt;
+                &lt;td&gt;Electronics&lt;/td&gt;
+                &lt;td&gt;In Stock&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Running Shoes&lt;/td&gt;
+                &lt;td&gt;Nike&lt;/td&gt;
+                &lt;td&gt;Rs. 4999&lt;/td&gt;
+                &lt;td&gt;Footwear&lt;/td&gt;
+                &lt;td&gt;In Stock&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Notebook&lt;/td&gt;
+                &lt;td&gt;Classmate&lt;/td&gt;
+                &lt;td&gt;Rs. 45&lt;/td&gt;
+                &lt;td&gt;Stationery&lt;/td&gt;
+                &lt;td&gt;In Stock&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Bluetooth Speaker&lt;/td&gt;
+                &lt;td&gt;JBL&lt;/td&gt;
+                &lt;td&gt;Rs. 2499&lt;/td&gt;
+                &lt;td&gt;Electronics&lt;/td&gt;
+                &lt;td&gt;Out of Stock&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/main&gt;
+
+            &lt;footer&gt;
+            &lt;p&gt;Product Catalog Page&lt;/p&gt;
+            &lt;/footer&gt;
+
+            &lt;/body&gt;
+            &lt;/html&gt;
+      </code></pre>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Result</h2>
+      <p class="text-slate-600">The result of this experiment is a web page that shows product details in a table with columns for name, brand, price, category, and availability.</p>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Application</h2>
+      <ul class="list-disc ml-5 space-y-2 text-slate-600">
+        <li>E-commerce product listings</li>
+        <li>Inventory and stock reports</li>
+        <li>Price comparison pages</li>
+        <li>Displaying structured data in rows and columns</li>
+      </ul>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-bold text-neutral-900 border-b-2 border-orange-500 inline-block pb-1 mb-3">Conclusion</h2>
+      <p class="text-slate-600">In conclusion, this experiment showed how to use the HTML table tag to display product information such as name, brand, price, and related details in a clear tabular format.</p>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-center text-stone-300 py-6 px-4 mt-auto">
+    <p class="font-bold text-orange-400">Web Technology Assignment Hub</p>
+    <p class="mt-1 text-sm">© 2026 | Built for learning HTML and web design</p>
+  </footer>
+</body>
+
+</html>
